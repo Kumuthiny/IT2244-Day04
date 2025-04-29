@@ -1,0 +1,160 @@
+login as: 2021ict97
+2021ict97@172.16.140.150's password:
+Last login: Fri Mar 21 14:57:19 2025 from 172.16.140.66
+[2021ict97@fedora ~]$ ls
+abc.tsv  abc.txt
+[2021ict97@fedora ~]$ ls -a
+.   abc.tsv  .abc.txt.swp   .bash_logout   .bashrc
+..  abc.txt  .bash_history  .bash_profile  .mozilla
+[2021ict97@fedora ~]$ pwd
+/home/2021ict97
+[2021ict97@fedora ~]$ ln -lgr
+ln: invalid option -- 'l'
+Try 'ln --help' for more information.
+[2021ict97@fedora ~]$ ln -ltr
+ln: invalid option -- 'l'
+Try 'ln --help' for more information.
+[2021ict97@fedora ~]$ ls -ltr
+total 8
+-rw-r--r--. 1 2021ict97 2021ict97 59 Mar 21 15:02 abc.txt
+-rw-r--r--. 1 2021ict97 2021ict97 68 Mar 21 15:13 abc.tsv
+[2021ict97@fedora ~]$ cal
+     March 2025
+Su Mo Tu We Th Fr Sa
+                   1
+ 2  3  4  5  6  7  8
+ 9 10 11 12 13 14 15
+16 17 18 19 20 21 22
+23 24 25 26 27 28 29
+30 31
+[2021ict97@fedora ~]$ date +%d
+24
+[2021ict97@fedora ~]$ date +%y
+25
+[2021ict97@fedora ~]$ date +%A
+Monday
+[2021ict97@fedora ~]$ date +%a
+Mon
+[2021ict97@fedora ~]$ date +%B
+March
+[2021ict97@fedora ~]$ date +%b
+Mar
+[2021ict97@fedora ~]$ date +%C
+20
+[2021ict97@fedora ~]$ date +%c
+Mon 24 Mar 2025 11:41:43 AM +0530
+[2021ict97@fedora ~]$ date +%D
+03/24/25
+[2021ict97@fedora ~]$ date +%d
+24
+[2021ict97@fedora ~]$ date +%E
+%E
+[2021ict97@fedora ~]$ date +%e
+24
+[2021ict97@fedora ~]$
+
+[2021ict97@fedora ~]$ date +%E
+%E
+[2021ict97@fedora ~]$ date +%e
+24
+[2021ict97@fedora ~]$ ^C
+[2021ict97@fedora ~]$ date +%n
+
+
+[2021ict97@fedora ~]$ date +%N
+025064452
+[2021ict97@fedora ~]$ date +%Y
+2025
+[2021ict97@fedora ~]$ date +%y
+25
+[2021ict97@fedora ~]$
+[2021ict97@fedora ~]$ date +%H
+11
+[2021ict97@fedora ~]$ date +%h
+Mar
+[2021ict97@fedora ~]$ date +%H
+11
+[2021ict97@fedora ~]$ date +%H
+11
+[2021ict97@fedora ~]$ date +%H
+11
+[2021ict97@fedora ~]$
+
+[2021ict97@fedora ~]$ ^C
+[2021ict97@fedora ~]$ echo "Enter number 1"
+Enter number 1
+[2021ict97@fedora ~]$ 10
+bash: 10: command not found...
+[2021ict97@fedora ~]$ read x
+10
+[2021ict97@fedora ~]$ echo "Enter number 2"
+Enter number 2
+[2021ict97@fedora ~]$ read y
+20
+[2021ict97@fedora ~]$ echo "Enter number 3"
+Enter number 3
+[2021ict97@fedora ~]$ read z
+30
+[2021ict97@fedora ~]$ sum = $(($x+$y+$z))
+sum: '=': No such file or directory
+sum: 60: No such file or directory
+[2021ict97@fedora ~]$ avg = $((sum/3))
+bash: avg: command not found...
+[2021ict97@fedora ~]$ avg=$((sum/3))
+[2021ict97@fedora ~]$
+[2021ict97@fedora ~]$ sum=$(($x+$y+$z))
+[2021ict97@fedora ~]$ sum=$(($x+$y+$z))
+[2021ict97@fedora ~]$ z
+bash: z: command not found...
+[2021ict97@fedora ~]$ echo z
+z
+[2021ict97@fedora ~]$ avg=$(($sum/3))
+[2021ict97@fedora ~]$ echo "Hi" $name
+Hi
+[2021ict97@fedora ~]$ echo "Who are you?"
+Who are you?
+[2021ict97@fedora ~]$ read name
+kumu
+[2021ict97@fedora ~]$ echo "Enter number 1"
+Enter number 1
+[2021ict97@fedora ~]$ read a
+78
+[2021ict97@fedora ~]$ echo "Enter number 2"
+Enter number 2
+[2021ict97@fedora ~]$ read b
+45
+[2021ict97@fedora ~]$ echo "Enter number 3"
+Enter number 3
+[2021ict97@fedora ~]$ read c
+89
+[2021ict97@fedora ~]$ sum=$(($a+$b+$c))
+[2021ict97@fedora ~]$ avg=$(($sum/3))
+[2021ict97@fedora ~]$ echo "hi" $name
+hi kumu
+[2021ict97@fedora ~]$ echo "Summation " $sum
+Summation  212
+[2021ict97@fedora ~]$ echo "Average " $avg
+Average  70
+[2021ict97@fedora ~]$ echo "Enter number 1"
+Enter number 1
+[2021ict97@fedora ~]$ read q
+78
+[2021ict97@fedora ~]$ echo "Enter number 2"
+Enter number 2
+[2021ict97@fedora ~]$ read r
+96
+[2021ict97@fedora ~]$ add=$(($q+$r))
+[2021ict97@fedora ~]$ sub=$(($q-$r))
+[2021ict97@fedora ~]$ multi=$(($q*$r))
+[2021ict97@fedora ~]$ div=$(($q/$r))
+[2021ict97@fedora ~]$ echo "Addition is " $add
+Addition is  174
+[2021ict97@fedora ~]$ echo "Substraction is " $sub
+Substraction is  -18
+[2021ict97@fedora ~]$ echo "multiplication is " $multi
+multiplication is  7488
+[2021ict97@fedora ~]$ echo "division is " $div
+division is  0
+[2021ict97@fedora ~]$
+
+
